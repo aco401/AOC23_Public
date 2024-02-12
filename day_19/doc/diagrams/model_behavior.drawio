@@ -1,0 +1,179 @@
+<mxfile host="65bd71144e">
+    <diagram id="YzUoQij953maOpbc3Z_9" name="Page-1">
+        <mxGraphModel dx="1713" dy="502" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="162" value="WorkflowThread_1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="-230" y="130" width="100" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="175" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="162">
+                    <mxGeometry x="45" y="150" width="10" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="177" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="162">
+                    <mxGeometry x="45" y="200" width="10" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="183" value="sortMachinePart()" style="html=1;" edge="1" parent="162">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="55.00034482758605" y="230" as="sourcePoint"/>
+                        <mxPoint x="55.00034482758605" y="250" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="75.19" y="230"/>
+                            <mxPoint x="105.19" y="230"/>
+                            <mxPoint x="105.19" y="250"/>
+                            <mxPoint x="85.19" y="250"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="190" value="sortMachinePart()" style="html=1;" edge="1" parent="162">
+                    <mxGeometry x="-0.1661" y="5" relative="1" as="geometry">
+                        <mxPoint x="55.000344827586105" y="330" as="sourcePoint"/>
+                        <mxPoint x="55.000344827586105" y="350" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="75.19" y="330"/>
+                            <mxPoint x="105.19" y="330"/>
+                            <mxPoint x="105.19" y="350"/>
+                            <mxPoint x="85.19" y="350"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="163" value="PartCoordinator" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;lifelineDashed=0;" vertex="1" parent="1">
+                    <mxGeometry x="-110" y="130" width="100" height="390" as="geometry"/>
+                </mxCell>
+                <mxCell id="187" value="transferPart(&lt;br&gt;sortStatus, &lt;br&gt;MachinePart)" style="html=1;exitX=1.416;exitY=0.564;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="163">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-65.84000000000015" y="370.24" as="sourcePoint"/>
+                        <mxPoint x="48.66" y="370" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-15" y="370"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="188" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="163">
+                    <mxGeometry x="44.16" y="370" width="10" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="189" value="sorted.push(&lt;br&gt;accepted)" style="html=1;exitX=1.416;exitY=0.564;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="163">
+                    <mxGeometry x="-0.0845" y="9" relative="1" as="geometry">
+                        <mxPoint x="49.15999999999977" y="370.24" as="sourcePoint"/>
+                        <mxPoint x="48.97034482758605" y="380" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="100" y="370"/>
+                            <mxPoint x="99.16" y="380"/>
+                            <mxPoint x="79.16" y="380"/>
+                        </Array>
+                        <mxPoint y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="165" value="init(Workflows, &lt;br&gt;Machineparts)" style="html=1;" edge="1" parent="1" source="164" target="162">
+                    <mxGeometry x="-0.0003" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="164" value="Main" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="-360" y="130" width="100" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="176" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="164">
+                    <mxGeometry x="45" y="90" width="10" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="191" value="while(!coordinator.&lt;br&gt;allSorted())" style="html=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="164" target="164">
+                    <mxGeometry y="15" relative="1" as="geometry">
+                        <mxPoint x="55.000344827586105" y="320" as="sourcePoint"/>
+                        <mxPoint x="55.000344827586105" y="340" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="75.19" y="320"/>
+                            <mxPoint x="105.19" y="320"/>
+                            <mxPoint x="105.19" y="340"/>
+                            <mxPoint x="85.19" y="340"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="173" value="registerWorker(&lt;br&gt;this, workfowkeys)" style="edgeStyle=none;html=1;" edge="1" parent="1" source="166" target="163">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="166" value="WorkflowThread_2" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="130" width="100" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="172" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="166">
+                    <mxGeometry x="45" y="110" width="10" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="178" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="166">
+                    <mxGeometry x="45" y="190" width="10" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="181" value="thread()" style="html=1;" edge="1" parent="166">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="55.00034482758605" y="190" as="sourcePoint"/>
+                        <mxPoint x="55.00034482758605" y="210" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="75.19" y="190"/>
+                            <mxPoint x="105.19" y="190"/>
+                            <mxPoint x="105.19" y="210"/>
+                            <mxPoint x="85.19" y="210"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="186" value="addPart(&lt;br&gt;MachinePart)" style="html=1;exitX=0.423;exitY=0.954;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="166">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-75.26999999999998" y="300.0000000000001" as="sourcePoint"/>
+                        <mxPoint x="45" y="300.0000000000001" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="167" value="init(Workflows, &lt;br&gt;Machineparts)" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="164" target="166">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-300.18965517241395" y="210" as="sourcePoint"/>
+                        <mxPoint x="-170.5" y="210" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-80" y="240"/>
+                            <mxPoint x="-80" y="240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="174" value="registerWorker(&lt;br&gt;this, workfowkeys)" style="edgeStyle=none;html=1;" edge="1" parent="1" source="162" target="163">
+                    <mxGeometry x="-0.0003" relative="1" as="geometry">
+                        <mxPoint x="-160.31" y="330" as="sourcePoint"/>
+                        <mxPoint x="-289.99965517241395" y="330" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-150" y="300"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="179" value="thread()" style="html=1;" edge="1" parent="1" source="162" target="162">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-170.18965517241395" y="310" as="sourcePoint"/>
+                        <mxPoint x="-50.5" y="310" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-160" y="330"/>
+                            <mxPoint x="-130" y="330"/>
+                            <mxPoint x="-130" y="350"/>
+                            <mxPoint x="-150" y="350"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="184" value="transferPart(&lt;br&gt;sortStatus, &lt;br&gt;MachinePart)" style="html=1;" edge="1" parent="1" source="162" target="163">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-178" y="401" as="sourcePoint"/>
+                        <mxPoint x="-164.9996551724139" y="390" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-120" y="420"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="185" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+                    <mxGeometry x="-65" y="410" width="10" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
